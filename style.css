@@ -1,0 +1,70 @@
+:root{
+    --default_margin: 5px;
+    --default_padding: 15px;
+    --main_banner_height: 25%;
+    --main_body_height: 75%;
+    --right_room_header_height: 10%;
+    --right_room_body_height: 90%;
+
+}
+
+main {
+  height: 100vh;
+  border: 5px solid red;
+  text-align: center;
+
+}
+
+#top-floor {
+  height: var(--main_banner_height);
+  background: lightcoral;
+  margin: var(--default_margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* text-align: center; */
+}
+
+#bottom-floor {
+  height: var(--main_body_height);
+  background: lightyellow;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#left_room {
+  width: 33%;
+  background-color: lightcyan;
+}
+
+#right_room {
+  width: 33%;
+  background-color: lightsalmon;
+  /* text-align: center; */
+}
+
+
+#right_room_header{
+    height: var(--right_room_header_height);
+    border: 1px solid limegreen;
+}
+
+#cards_container{
+    height: var(--right_room_body_height);
+    border: 1px solid limegreen;
+
+}
+
+#user_input_form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.stacked_up {
+    display: flex;
+    flex-direction: column;
+}

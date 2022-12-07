@@ -1,10 +1,10 @@
 :root{
-    --default_margin: 5px;
-    --default_padding: 15px;
-    --main_banner_height: 25%;
-    --main_body_height: 75%;
-    --right_room_header_height: 10%;
-    --right_room_body_height: 90%;
+  --default_margin: 5px;
+  --default_padding: 15px;
+  --main_banner_height: 25%;
+  --main_body_height: 75%;
+  --right_room_header_height: 10%;
+  --right_room_body_height: 90%;
 
 }
 
@@ -14,57 +14,89 @@ main {
   text-align: center;
 
 }
+body{
+  height: 100vh;
 
-#top-floor {
+}
+
+#top_floor {
+  /* border: 1px solid limegreen;
+  text-align: center; */
+
+
   height: var(--main_banner_height);
-  background: lightcoral;
-  margin: var(--default_margin);
+  background: rgba(124, 122, 122, 0.997);
+  /* margin: var(--default_margin); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  /* text-align: center; */
 }
 
-#bottom-floor {
+#left_room {
+  /* background-color: lightseagreen; */
+  /* width: 33%; */
+  background-color: rgba(76, 74, 74, 0.997);
+}
+
+#right_room {
+  /* background-color: lightsalmon; */
+
+  /* width: 33%; */
+  background-color: rgba(76, 74, 74, 0.997);
+}
+/* 
+body {
+  height: 100vh;
+} */
+
+#top_floor {
+  height: 25%;
+}
+
+#bottom_floor {
+  /* height: 75%; */
+
   height: var(--main_body_height);
   background: lightyellow;
   display: flex;
   justify-content: space-evenly;
 }
 
-#left_room {
-  width: 33%;
-  background-color: lightcyan;
-}
-
-#right_room {
-  width: 33%;
-  background-color: lightsalmon;
-  /* text-align: center; */
-}
-
-
-#right_room_header{
-    height: var(--right_room_header_height);
-    border: 1px solid limegreen;
-}
-
-#cards_container{
-    height: var(--right_room_body_height);
-    border: 1px solid limegreen;
+#right_room_top_floor {
+  height: 10%;
+  margin-top: 25px;
+  /* border: 1px solid black; */
 
 }
 
-#user_input_form{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#right_room_bottom_floor {
+  height: 90%;
+
+  /* height: 100vh; */
+  
+  /* border: 1px solid lime; */
 }
 
-.stacked_up {
-    display: flex;
-    flex-direction: column;
+
+
+.div_card{
+  /* border: 5px solid red; */
+  width: 240px;
+  text-align: left;
+}
+
+#remove_btn{
+  background-color: red; 
+
+}
+
+#edit_btn{
+  background-color: yellow; 
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-between;
 }

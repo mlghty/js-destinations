@@ -16,6 +16,8 @@ main {
 }
 body{
   height: 100vh;
+  background-color: rgba(76, 74, 74, 0.997);
+
 
 }
 
@@ -38,6 +40,7 @@ body{
   /* background-color: lightseagreen; */
   /* width: 33%; */
   background-color: rgba(76, 74, 74, 0.997);
+  height: 75vh;
 }
 
 #right_room {
@@ -62,21 +65,23 @@ body {
   background: lightyellow;
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 #right_room_top_floor {
-  height: 10%;
+  height: 100px;
   margin-top: 25px;
   /* border: 1px solid black; */
 
 }
 
 #right_room_bottom_floor {
-  height: 90%;
+  display: flex;
+  height: fit-content;
+  justify-content: space-evenly;
 
-  /* height: 100vh; */
-  
-  /* border: 1px solid lime; */
+
+ 
 }
 
 
@@ -85,6 +90,8 @@ body {
   /* border: 5px solid red; */
   width: 240px;
   text-align: left;
+  margin-bottom: 15px;
+
 }
 
 #remove_btn{
